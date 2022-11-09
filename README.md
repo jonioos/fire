@@ -30,9 +30,9 @@ A fancy parse engine for JML (Jonio Markup Language) files
  ```
   (ADDRESS_GROUP)
       [NAME]"Alice". 
-      [SURNAME]"Bob". 
-      [ADDRESS]"123 Evergreen Terrace". 
-      [HOBBIES]"Guitar"|"Photography". 
+      [SURNAME]"Bob"
+      [ADDRESS]"123 Evergreen Terrace"
+      [HOBBIES]"Guitar"|"Photography"
   (ENDGROUP)
   (ANOTHER_GROUP)  
       [NAME]"Alice"  
