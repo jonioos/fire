@@ -1,0 +1,16 @@
+(GROUP1)
+[CHAT]"Test"
+[CHATID]12424242
+[VALUE]False
+[LISTA_TEST]"Prova"|False|"Test"|"Lista"
+[TUPLE TEST]"Prova"/0/"Pippo"
+[TUPLE]"Prova"/0/"Pippo"/0
+(ENDGROUP)
+(GROUP)
+[CHAT]"Test"
+[CHATID]12424242
+[VALUE]False
+[LISTA_TEST]"Prova"|False|"Test"|"Lista"
+[TUPLE TEST]"Prova"/0/"Pippo"
+[TUPLE]"Prova"/0/"Pippo"/0
+(ENDGROUP)
