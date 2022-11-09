@@ -43,3 +43,15 @@ A fancy parse engine for JML (Jonio Markup Language) files
 ** Remember, the tag (ENDGROUP) is important! </p>
 
  ```
+ (ADDRESS_GROUP)
+  [NAME]"Alice". 
+  [SURNAME]"Bob". 
+  [ADDRESS]"123 Evergreen Terrace". 
+  [HOBBIES]"Guitar"|"Photography". 
+  (ENDGROUP). 
+  (ADDRESS_GROUP)  
+  [NAME]"Alice"  
+  [SURNAME]"Bob"  
+  [ADDRESS]"123 Evergreen Terrace"  
+  [HOBBIES]"Guitar"|"Photography"  
+  (ENDGROUP)
