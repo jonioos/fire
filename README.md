@@ -18,6 +18,6 @@ A fancy parse engine for JML (Jonio Markup Language) files
   If you want to make a list (Lists are typed, which means you cant put inside the same list strings or boolean together):</br></br>
   <code>[LISTSAMPLE]"First Element"|"Second Element"</code></br>
   And if you want to make a tuple you have to write the follow code:</br></br>
-  <code>[TUPLESAMPLE]"string"/0/True/</code></br>
+  <code>[TUPLESAMPLE]"string"/0/True/</code></br></br>
   (Yes, boolean values need the capital letter)</br>
 </p>
