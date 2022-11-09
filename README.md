@@ -33,7 +33,7 @@ A fancy parse engine for JML (Jonio Markup Language) files
       [SURNAME]"Bob". 
       [ADDRESS]"123 Evergreen Terrace". 
       [HOBBIES]"Guitar"|"Photography". 
-  (ENDGROUP). 
+  (ENDGROUP)
   (ANOTHER_GROUP)  
       [NAME]"Alice"  
       [SURNAME]"Bob"  
