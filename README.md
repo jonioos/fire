@@ -13,13 +13,25 @@ A fancy parse engine for JML (Jonio Markup Language) files
 <h2>What's the syntax?</h2>
 <p>To write a simple string you have to write the follow code, the name inside square brackets can be everything you want:</br>
 </br>
-  <code>[KEYNAME]"String"</code></br></br>
+  <code>[MY_NAME]"Bob"</code></br></br>
   Or if you want to save a Int you have to write the follow code:</br></br>
   <code>[KEYINT]0</code></br></br>
   If you want to make a list (Lists are typed, which means you cant put inside the same list strings or boolean together):</br>
   </br>
-  <code>[LISTSAMPLE]"First Element"|"Second Element"</code></br></br>
+  <code>[LISTSAMPLE]"Alice"|"Bob"</code></br></br>
   And if you want to make a tuple you have to write the follow code:</br></br>
-  <code>[TUPLESAMPLE]"string"/0/True/</code></br></br>
+  <code>[TUPLESAMPLE]"Alice"/0/True/</code></br></br>
   (Yes, boolean values need the capital letter)</br>
 </p>
+<h2> GROUPS! </h2>
+<p> Yeah! You can actually make groups! To make groups you have to use the round brackets</p>
+</br></br>
+<code> (ADDRESS_GROUP) <br>
+  [NAME]"Alice"
+  [SURNAME]"Bob"
+  [ADDRESS]"123 Evergreen Terrace"
+  [HOBBIES]"Guitar"|"Photography"
+  (ENDGROUP)
+</code>
+</br>
+<p>** Remember, the tag (ENDGROUP) is important! </p>
