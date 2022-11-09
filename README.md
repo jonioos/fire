@@ -25,7 +25,7 @@ A fancy parse engine for JML (Jonio Markup Language) files
 </p>
 <h2> GROUPS! </h2>
 <p> Yeah! You can actually make groups! To make groups you have to use the round brackets</p>
-</br></br>
+</br>
 <code> (ADDRESS_GROUP)  
   [NAME]"Alice"  
   [SURNAME]"Bob"  
