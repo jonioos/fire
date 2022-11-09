@@ -1,4 +1,4 @@
-# fire
+# FIRE Engine
 A fancy parse engine for JML (Jonio Markup Language) files
 
 <h2>What's FIRE?</h2>
