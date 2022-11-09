@@ -40,7 +40,5 @@ A fancy parse engine for JML (Jonio Markup Language) files
   [HOBBIES]"Guitar"|"Photography"  
   (ENDGROUP)
   
-  ```
-
 </br>
 ** Remember, the tag (ENDGROUP) is important! </p>
