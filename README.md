@@ -21,7 +21,8 @@ A fancy parse engine for JML (Jonio Markup Language) files
   <code>[LISTSAMPLE]"Alice"|"Bob"</code></br></br>
   And if you want to make a tuple you have to write the follow code:</br></br>
   <code>[TUPLESAMPLE]"Alice"/0/True/</code></br></br>
-  (Yes, boolean values need the capital letter)</br>
+  (Yes, boolean values need the capital letter like this):</br>
+  <code>[OFFICIAL]True</code>
 </p>
 <h2> GROUPS! </h2>
 <p> Yeah! You can actually make groups! To make groups you have to use the round brackets
