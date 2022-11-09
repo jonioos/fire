@@ -34,7 +34,7 @@ A fancy parse engine for JML (Jonio Markup Language) files
   [ADDRESS]"123 Evergreen Terrace". 
   [HOBBIES]"Guitar"|"Photography". 
   (ENDGROUP). 
-  (ADDRESS_GROUP)  
+  (ANOTHER_GROUP)  
   [NAME]"Alice"  
   [SURNAME]"Bob"  
   [ADDRESS]"123 Evergreen Terrace"  
