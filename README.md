@@ -11,8 +11,7 @@ A fancy parse engine for JML (Jonio Markup Language) files
 <p>The syntax is very simple. You can write the key inside square brackets and the value. For now it supports up to 5 type of objects: Strings, Int, Boolean, Tuple and Lists. The fire engine will read the file and return the objects.</p>
 
 <h2>What's the syntax?</h2>
-<p>To write a simple string you have to write the follow code, the name inside square brackets can be everything you want:</br>
-</br>
+
 
  ```
       [MY_NAME]"Bob". 
@@ -22,6 +21,8 @@ A fancy parse engine for JML (Jonio Markup Language) files
       [OFFICIAL]True
   ```
   
+  <p>To write a simple string you have to write the follow code, the name inside square brackets can be everything you want:</br>
+  </br>
   <code>[MY_NAME]"Bob"</code></br></br>
   Or if you want to save a Int you have to write the follow code:</br></br>
   <code>[KEYINT]0</code></br></br>
