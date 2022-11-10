@@ -13,6 +13,15 @@ A fancy parse engine for JML (Jonio Markup Language) files
 <h2>What's the syntax?</h2>
 <p>To write a simple string you have to write the follow code, the name inside square brackets can be everything you want:</br>
 </br>
+
+ ```
+      [MY_NAME]"Bob". 
+      [KEYINT]0
+      [LISTSAMPLE]"Alice"|"Bob"
+      [TUPLESAMPLE]"Alice"/0/True/
+      [OFFICIAL]True
+  ```
+  
   <code>[MY_NAME]"Bob"</code></br></br>
   Or if you want to save a Int you have to write the follow code:</br></br>
   <code>[KEYINT]0</code></br></br>
