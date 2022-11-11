@@ -13,7 +13,7 @@
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU Lesser Public License for more details.
-
+import fire_exceptions as ex
 def __main__(x):
     """Fire Engine"""
     key = []
@@ -34,7 +34,7 @@ def __main__(x):
                         group_key.append(group_name)
                         isGroup = True
                     else:
-                        raise DuplicateKeyError(f"Duplicate group key for ({group_name}) in line {i+1}")
+                        raise ex.DuplicateKeyError(f"Duplicate group key for ({group_name}) in line {i+1}")
 
         if line[0] == '[':
             keyName= ""
@@ -46,11 +46,11 @@ def __main__(x):
                 if not(search_used_key(keyName, key)):
                     key.append(keyName)
                 else:
-                    raise DuplicateKeyError(f"Duplicate key for [{keyName}]")
+                    raise ex.DuplicateKeyError(f"Duplicate key for [{keyName}]")
             else:
                 for i, item in enumerate(key):
                     if group_appartenance_key[i] == group_name and keyName == item:
-                        raise DuplicateKeyError(f"Duplicate key for [{keyName}] inside group ({group_name})")
+                        raise ex.DuplicateKeyError(f"Duplicate key for [{keyName}] inside group ({group_name})")
                 key.append(keyName)
                 group_appartenance_key.append(group_name)
 
@@ -66,7 +66,7 @@ def __main__(x):
                     elif(tmp_value == "False"):
                         value += (False,)
                     else:
-                        raise SyntaxError(f"Misunderstanding type in line {str(i+1)}")
+                        raise ex.SyntaxError(f"Misunderstanding type in line {str(i+1)}")
                 #List
                 elif("|" in line):
                     l = line[key2+1:len(line)-1].split("|")
@@ -81,14 +81,14 @@ def __main__(x):
                                 if(i.isnumeric()):
                                     temp_vlist.append(int(item))
                                 else:
-                                    raise SyntaxError(f"Error in list. Misunderstanding type in line {str(i+1)}")
+                                    raise ex.SyntaxError(f"Error in list. Misunderstanding type in line {str(i+1)}")
                             else:
                                 if(item=="True"):
                                     temp_vlist.append(True)
                                 elif(item=="False"):
                                     temp_vlist.append(False)
                                 else:
-                                    raise SyntaxError(f"Error in list. Misunderstanding type in line {str(i+1)}")
+                                    raise ex.SyntaxError(f"Error in list. Misunderstanding type in line {str(i+1)}")
                     value += (temp_vlist,)
                 #Tuple
                 elif("/" in line):
@@ -106,7 +106,7 @@ def __main__(x):
                                     elif(item=="False"):
                                         temp_vtuple = temp_vtuple + (False,)
                                     else:
-                                        raise NumberError(f"Error in tuple. Misunderstanding type in line {i+1}")
+                                        raise ex.NumberError(f"Error in tuple. Misunderstanding type in line {i+1}")
                     value += (temp_vtuple,)
                 #String
                 else:
@@ -115,7 +115,7 @@ def __main__(x):
         elif(line[0] == "("):
             pass
         else:
-            raise SyntaxError(f"Syntax error in line {str(i+1)}")
+            raise ex.SyntaxError(f"Syntax error in line {str(i+1)}")
 
     dic = dic + (key,value)
     if(isGroup == True):
@@ -135,13 +135,3 @@ def search_used_key(key, list):
 
 
 
-class StringError(Exception):
-    pass
-class SpaceBetween(Exception):
-    pass
-class NumberError(Exception):
-    pass
-class DuplicateKeyError(Exception):
-    pass
-class SyntaxError(Exception):
-    pass
